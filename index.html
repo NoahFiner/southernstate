@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+	<title>southen state</title>
+	<style>
+		* {
+			padding:0;
+			margin: 0;
+			background-color: #FFF5E4;
+			font-family: 'Lora', serif;
+		}
+
+		.everything-outer {
+			padding: 5rem;
+			width: 40%;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.everything-outer {
+				padding: 2rem;
+				width: 80%;
+			}
+		}
+
+		@font-face {
+		    font-family: BodoniBold;
+		    src: url("BodoniBold.otf") format("opentype");
+		}
+
+		@font-face {
+		    font-family: BodoniLight;
+		    src: url("Bodoni-16-Book.otf") format("opentype");
+		}
+
+		@font-face {
+		    font-family: GilroyBold;
+		    src: url("Gilroy-ExtraBold.otf") format("opentype");
+		}
+
+		@font-face {
+		    font-family: GilroyLight;
+		    src: url("Gilroy-Light.otf") format("opentype");
+		}
+
+		h1, h2, h3, h4, h5 {
+			font-family: BodoniLight, serif;	
+			color: #6D4C3D;
+			margin-top: 2rem;
+			line-height: 1;
+		}
+
+		h6 {
+			font-family: GilroyBold, helvetica, sans-serif;
+			font-size: 1.25em;
+			color: #6D4C3D;
+		}	
+
+		p {
+			font-family: GilroyLight, helvetica, sans-serif;
+			font-size: 1em;
+			margin-bottom: 1em;
+			color: #6D4C3D;
+			animation: opacityIn ease 1s;
+		}
+
+		.opacity-in {
+			animation: opacityIn ease 1s;
+		}
+
+		.fade-in {
+			transform: translateY(0px);
+			animation: fadeIn ease 1s;
+		}
+
+		.swipe-in {
+			transform-origin: left center;
+			animation: swipeIn ease 2s;
+		}
+
+		.border {
+			border: 4px solid #A39171;
+			width: 20rem;
+			padding: 0.25rem;
+			margin-bottom: 4rem;
+
+		}
+		.divider {
+			height: 4px;
+			width: 10rem;
+			margin: 0.25rem 0 1rem 0;
+			background-color: #A39171;
+		}
+
+		@keyframes fadeIn {
+			0% {
+				transform: translateY(-25px);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0px);
+				opacity: 1;
+			}
+		}
+
+		@keyframes opacityIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes swipeIn {
+			0% {
+				transform: scaleX(0);
+			}
+			100% {
+				transform: scaleX(1);
+			}
+		}
+
+		.button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: GilroyBold, helvetica, sans-serif;
+			font-size: 1.25em;
+			padding: 1em;
+			cursor: pointer;
+			margin-top: 2rem;
+			text-transform: uppercase;
+			color: #A39171;
+			max-width: 20rem;
+			border: 4px solid #A39171;
+			background-color: transparent;
+			transition: color 0.25s, background-color 0.25s; 
+		}
+
+		.button:hover {
+			background-color: #A39171;
+			color: white;
+		}
+		.no-margin {
+			margin-top: -3.5rem !important;
+		}
+	</style>
+</head>
+<body>
+<div class="everything-outer">
+	<div class="border">
+		<h1 class="fade-in">Southern State</h1>
+	</div>
+	<p class="no-margin">thanksgiving tasting menu</p>
+	<h1 class="fade-in">an invitation</h1>
+	<div class="divider swipe-in"></div>
+	<div class="menu-item">
+		<p>Please join us for a multi-sensory and multi-dimensional experience</p>
+		<p>We shall be hosting this extremely valuable and essential dinner on Monday, November 23rd at 20:00.</p>
+		<p>Dress code is business casual.</p>
+	</div>
+
+	<h1 class="fade-in">a letter from the chefs</h1>
+	<div class="divider swipe-in"></div>
+	<div class="menu-item">
+		<p>Our food was hand selected to foster kinship and a sense of community. Tonight is a multi-sensory experience that will tarnsport you to a higher dimension.</p>
+		<p>While the food is the star of the table we hope breaking bread helps strengthen family ties. We hope that you will leave this table tongiht with a full stomach and an even fulle appreciaotn of food and family.</p>
+	</div>
+
+	<div class="button opacity-in" onclick="alert('sorry, our wait lists are currently full')">
+		sign up for our waitlist
+	</div>
+</div>
+</body>
+</html>
