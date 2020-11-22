@@ -147,6 +147,19 @@
 		.no-margin {
 			margin-top: -3.5rem !important;
 		}
+
+        .insta {
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+            opacity: 0.6;
+            margin-top: 2rem;
+            transition: opacity 0.25s;
+        }
+
+        .insta:hover {
+            opacity: 1;
+        }
 	</style>
 </head>
 <body>
@@ -166,13 +179,17 @@
 	<h1 class="fade-in">a letter from the chefs</h1>
 	<div class="divider swipe-in"></div>
 	<div class="menu-item">
-		<p>Our food was hand selected to foster kinship and a sense of community. Tonight is a multi-sensory experience that will tarnsport you to a higher dimension.</p>
-		<p>While the food is the star of the table we hope breaking bread helps strengthen family ties. We hope that you will leave this table tongiht with a full stomach and an even fulle appreciaotn of food and family.</p>
+		<p>Our food was hand selected to foster kinship and a sense of community. Tonight is a multi-sensory experience that will transport you to a higher dimension.</p>
+		<p>While the food is the star of the table we hope breaking bread helps strengthen family ties. We hope that you will leave this table tongiht with a full stomach and an even full appreciation of food and family.</p>
 	</div>
 
 	<div class="button opacity-in" onclick="alert('We are currently not accepting reservations at this moment. However, if you are on Shift Core Team or Colter you have a spot reserved.')">
 		sign up for our waitlist
-	</div>
+    </div>
+    
+    <a href="https://www.instagram.com/923southernstate/" target="_blank">
+        <img src="insta.png" class="insta" />
+    </a>
 </div>
 </body>
 </html>
